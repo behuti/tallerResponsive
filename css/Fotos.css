@@ -1,0 +1,56 @@
+body {
+  font-family: sans-serif;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
+}
+
+.flex-container > div {
+  height: 1000px;
+  width: 100%;
+  border: 5px solid #fff;
+}
+
+.flex-container > .tropical {
+  background: url("https://source.unsplash.com/A-11N8ItHZo/1000x1000");
+}
+.flex-container > .cold {
+  background: url("https://source.unsplash.com/D9873iLktiY/1000x1000");
+}
+.flex-container > .pnw {
+  background: url("https://source.unsplash.com/rEOpo4kmUzU/1000x1000");
+}
+.flex-container > .desert {
+  background: url("https://source.unsplash.com/N3hafr52Teg/1000x1000");
+}
+
+@media only screen and (max-width: 1000px) {
+  .flex-container {
+    flex-wrap: wrap;
+  }
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+.menu {
+  display: flex;
+  height: 60px;
+  background-color: white;
+  padding: 0 25px;
+  align-items: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+}
